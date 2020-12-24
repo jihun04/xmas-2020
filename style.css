@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  font-family: "Poor Story", "Open Sans", sans-serif;
+}
+body {
+  background-color: #9b070f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  margin: 0;
+}
+.envelope {
+  background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 180px;
+  cursor: pointer;
+}
+.envelope-msg {
+  color: white;
+}
+.letter-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.letter-close {
+  display: none;
+}
+.cake {
+  width: 190px;
+  height: 190px;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 0 10px -0.1em rgb(255, 255, 255);
+}
+h1 {
+  color: white;
+}
+.message-box {
+  box-sizing: border-box;
+  width: 370px;
+  background-color: #fffef0;
+  border-radius: 2px;
+  box-shadow: 0 0 10px -0.1em rgb(255, 255, 255);
+  padding: 14px;
+  font-size: 23px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.message-text {
+  color: #362e2b;
+  margin: 0;
+  margin-bottom: 14px;
+}
+.message-from {
+  text-align: end;
+}
+.message-date {
+  margin-right: 4px;
+}
+@media screen and (max-width: 380px) {
+  .message-box {
+    width: 95vw;
+  }
+  .cake {
+    width: 150px;
+    height: 150px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
